@@ -6,11 +6,6 @@ import win32com.client
 import pythoncom
 from detector import OpenaiDetector
 
-# uses the OpenaiDetector algorithm to determine if email was composed by ChatGPT
-def detect_ai(email):
-	response = od.detect(email)
-	return response
-
 class Handler_Class(object):
 	def OnNewMailEx(self, receivedItemsIDs):
 		# RecrivedItemIDs is a collection of mail IDs separated by a ",".
@@ -22,7 +17,8 @@ class Handler_Class(object):
 			print("Sender: ", mail.SenderName)
 			# print the email subject line
 			print("Subject: ", mail.Subject)
-			ai_response = detect_ai(mail.Body)
+			# uses the OpenaiDetector algorithm to determine if email was composed by ChatGPT
+			ai_response = od.detect(mail.Body)
 			# ai_response will be a string if an error occured
 			if isinstance(ai_response, str):
 				print(ai_response)
