@@ -15,9 +15,9 @@ After cloning or downloading this repository, you will need to access your OpenA
 To retrieve your bearer token you will need to:
 
 1. Go to https://platform.openai.com/ai-text-classifier 
-2. Hit F12 to access the Developer tools 3.
-3.  Select the Network Tab 4. 
-4. Select nearly any POST Operation (paste text into detection box and click on submit) 5.
+2. Hit F12 to access the Developer tools (or right-click and Inspect)
+3.  Select the Network Tab
+4. Select nearly any POST Operation (paste text into detection box and click on submit)
 5. Find your current Bearer token in the Request Headers
 
 
