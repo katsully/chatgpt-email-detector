@@ -8,7 +8,7 @@ Discover if someone is sending you an email using ChatGPT! With each new email, 
 
 ### Installation
 
-*Python and pip will be required to use this directory.*
+*Python and pip will be required to use this directory. Currently this code only works with Microsoft Outlook.*
 
 After cloning or downloading this repository, you will need to access your OpenAI Bearer token. Having an OpenAI account is required for this step. If you don't have an account, sign up [here](https://platform.openai.com/signup/)
 
