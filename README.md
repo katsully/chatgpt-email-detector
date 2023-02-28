@@ -26,7 +26,7 @@ To retrieve your bearer token you will need to:
 
 6. Find your current Bearer token in the Request Headers
 
-   ![auth_pic](C:\Users\Kat.Sullivan\chatgpt-detector\auth_pic.png)
+   ![auth_pic](auth_pic.png)
 
 
 
