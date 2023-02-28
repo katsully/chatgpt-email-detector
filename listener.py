@@ -7,7 +7,7 @@ import pythoncom
 from detector import OpenaiDetector
 
 # uses the OpenaiDetector algorithm to determine if email was composed by ChatGPT
-def kat_detect(email):
+def detect_ai(email):
 	response = od.detect(email)
 	return response
 
@@ -22,7 +22,7 @@ class Handler_Class(object):
 			print("Sender: ", mail.SenderName)
 			# print the email subject line
 			print("Subject: ", mail.Subject)
-			ai_response = kat_detect(mail.Body)
+			ai_response = detect_ai(mail.Body)
 			# ai_response will be a string if an error occured
 			if isinstance(ai_response, str):
 				print(ai_response)
